@@ -89,10 +89,10 @@ export default function Modules() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
             Your 6-Week Journey
           </h2>
-          <p className="text-xl text-gray-600">
+          <p className="text-xl text-gray-300">
             Each week builds on the last, moving you from confusion to crystal-clear calling
           </p>
         </motion.div>
@@ -114,7 +114,7 @@ export default function Modules() {
                   </div>
                 </div>
                 <div className="flex-grow">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-1">
+                  <h3 className="text-2xl font-bold text-white mb-1">
                     {module.title}
                   </h3>
                   <p className="text-yellow-500 font-semibold mb-4">{module.subtitle}</p>
@@ -122,8 +122,8 @@ export default function Modules() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                     {module.lessons.map((lesson, i) => (
                       <div key={i} className="flex items-center gap-2">
-                        <BookOpen className="w-4 h-4 text-gray-400 flex-shrink-0" />
-                        <span className="text-gray-700">{lesson}</span>
+                        <BookOpen className="w-4 h-4 text-yellow-400 flex-shrink-0" />
+                        <span className="text-gray-300">{lesson}</span>
                       </div>
                     ))}
                   </div>

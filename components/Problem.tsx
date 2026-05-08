@@ -50,7 +50,7 @@ export default function Problem() {
           </p>
 
           <div className="bg-gray-900 border-l-4 border-yellow-500 p-6 my-8">
-            <ul className="space-y-3 text-lg">
+            <ul className="space-y-3 text-lg text-white">
               <li>What if I missed mine?</li>
               <li>What if I'm not spiritual enough to hear it?</li>
               <li>What if it's too late?</li>
