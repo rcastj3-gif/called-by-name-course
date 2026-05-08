@@ -34,7 +34,7 @@ export default function Problem() {
             But there's this nagging question that won't leave you alone:
           </p>
 
-          <p className="text-2xl font-bold text-gray-900 text-center my-8">
+          <p className="text-2xl font-bold text-yellow-500 text-center my-8">
             "What am I actually supposed to DO with my life?"
           </p>
 
@@ -49,7 +49,7 @@ export default function Problem() {
             you're wondering...
           </p>
 
-          <div className="bg-red-50 border-l-4 border-red-500 p-6 my-8">
+          <div className="bg-gray-900 border-l-4 border-yellow-500 p-6 my-8">
             <ul className="space-y-3 text-lg">
               <li>What if I missed mine?</li>
               <li>What if I'm not spiritual enough to hear it?</li>
@@ -61,7 +61,7 @@ export default function Problem() {
             You're not spiritually defective. You're not lacking faith. You're not broken.
           </p>
 
-          <p className="text-2xl font-bold text-gray-900 text-center my-8">
+          <p className="text-2xl font-bold text-yellow-500 text-center my-8">
             You just need a process.
           </p>
         </motion.div>

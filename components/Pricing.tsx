@@ -44,12 +44,12 @@ export default function Pricing({ onCtaClick }: PricingProps) {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="bg-white rounded-2xl shadow-2xl overflow-hidden"
         >
-          <div className="bg-gradient-to-br from-red-600 to-red-700 p-8 text-white text-center">
-            <p className="text-red-200 mb-2">Complete 6-Week Program</p>
+          <div className="bg-gradient-to-br from-gray-900 to-black p-8 text-white text-center border-b-4 border-yellow-500">
+            <p className="text-yellow-400 mb-2">Complete 6-Week Program</p>
             <div className="flex items-baseline justify-center gap-2">
               <span className="text-5xl sm:text-6xl font-bold">$297</span>
             </div>
-            <p className="text-red-200 mt-2">or 3 payments of $107</p>
+            <p className="text-yellow-400 mt-2">or 3 payments of $107</p>
           </div>
 
           <div className="p-8">
@@ -60,8 +60,8 @@ export default function Pricing({ onCtaClick }: PricingProps) {
             <ul className="space-y-4 mb-8">
               {features.map((feature, index) => (
                 <li key={index} className="flex items-start gap-3">
-                  <div className="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <Check className="w-4 h-4 text-red-600" />
+                  <div className="w-6 h-6 bg-yellow-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <Check className="w-4 h-4 text-yellow-600" />
                   </div>
                   <span className="text-gray-700">{feature}</span>
                 </li>
@@ -71,7 +71,7 @@ export default function Pricing({ onCtaClick }: PricingProps) {
             <div className="text-center">
               <button
                 onClick={onCtaClick}
-                className="w-full sm:w-auto px-10 py-5 bg-red-600 hover:bg-red-700 text-white font-bold text-xl rounded-lg transition-colors shadow-lg"
+                className="w-full sm:w-auto px-10 py-5 bg-yellow-500 hover:bg-yellow-600 text-black font-bold text-xl rounded-lg transition-colors shadow-lg"
               >
                 ENROLL NOW — GET CLARITY
               </button>
@@ -87,12 +87,12 @@ export default function Pricing({ onCtaClick }: PricingProps) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="mt-12 bg-green-50 border border-green-200 rounded-xl p-6 text-center"
+          className="mt-12 bg-gray-900 border border-yellow-500 rounded-xl p-6 text-center"
         >
-          <p className="text-green-800 font-semibold text-lg">
+          <p className="text-yellow-400 font-semibold text-lg">
             Total Value: $1,997
           </p>
-          <p className="text-green-700">
+          <p className="text-yellow-300">
             Your Investment: $297 (Save $1,700)
           </p>
         </motion.div>

@@ -105,11 +105,11 @@ export default function Modules() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-gray-50 rounded-2xl p-8 border-l-4 border-red-500"
+              className="bg-gray-900 rounded-2xl p-8 border-l-4 border-yellow-500"
             >
               <div className="flex flex-col md:flex-row md:items-start gap-6">
                 <div className="flex-shrink-0">
-                  <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center text-white font-bold text-2xl">
+                  <div className="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center text-black font-bold text-2xl">
                     {module.week}
                   </div>
                 </div>
@@ -117,7 +117,7 @@ export default function Modules() {
                   <h3 className="text-2xl font-bold text-gray-900 mb-1">
                     {module.title}
                   </h3>
-                  <p className="text-red-600 font-semibold mb-4">{module.subtitle}</p>
+                  <p className="text-yellow-500 font-semibold mb-4">{module.subtitle}</p>
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                     {module.lessons.map((lesson, i) => (
@@ -128,8 +128,8 @@ export default function Modules() {
                     ))}
                   </div>
                   
-                  <div className="bg-red-50 rounded-lg p-4 mt-4">
-                    <p className="text-red-800 font-semibold">
+                  <div className="bg-gray-800 rounded-lg p-4 mt-4">
+                    <p className="text-yellow-400 font-semibold">
                       Week {module.week} Outcome: {module.outcome}
                     </p>
                   </div>

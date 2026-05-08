@@ -56,8 +56,8 @@ export default function Solution() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow"
             >
-              <div className="w-14 h-14 bg-red-100 rounded-lg flex items-center justify-center mb-4">
-                <feature.icon className="w-7 h-7 text-red-600" />
+              <div className="w-14 h-14 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
+                <feature.icon className="w-7 h-7 text-yellow-600" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">{feature.title}</h3>
               <p className="text-gray-600">{feature.description}</p>
@@ -70,21 +70,21 @@ export default function Solution() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="bg-gradient-to-br from-red-600 to-red-700 rounded-2xl p-8 text-white text-center"
+          className="bg-gradient-to-br from-gray-900 to-black rounded-2xl p-8 text-white text-center border border-yellow-500"
         >
           <h3 className="text-2xl font-bold mb-4">In 6 Weeks, Here's What Changes:</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
             <div className="bg-white/10 rounded-lg p-4">
               <p className="font-semibold">Week 1:</p>
-              <p className="text-red-100">Understand HOW God calls (and why you've been missing it)</p>
+              <p className="text-yellow-200">Understand HOW God calls (and why you've been missing it)</p>
             </div>
             <div className="bg-white/10 rounded-lg p-4">
               <p className="font-semibold">Week 2:</p>
-              <p className="text-red-100">Clear the blockages drowning out His voice</p>
+              <p className="text-yellow-200">Clear the blockages drowning out His voice</p>
             </div>
             <div className="bg-white/10 rounded-lg p-4">
               <p className="font-semibold">Week 3:</p>
-              <p className="text-red-100">Discover divine breadcrumbs in your life</p>
+              <p className="text-yellow-200">Discover divine breadcrumbs in your life</p>
             </div>
             <div className="bg-white/10 rounded-lg p-4">
               <p className="font-semibold">Week 4:</p>

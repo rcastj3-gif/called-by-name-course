@@ -9,7 +9,7 @@ interface HeroProps {
 
 export default function Hero({ onCtaClick }: HeroProps) {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center bg-black text-white overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]" />
@@ -21,7 +21,7 @@ export default function Hero({ onCtaClick }: HeroProps) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <p className="text-sky-400 font-semibold mb-4 tracking-wide uppercase text-sm">
+          <p className="text-yellow-500 font-semibold mb-4 tracking-wide uppercase text-sm">
             Based on the book by Reyes Castillo
           </p>
         </motion.div>
@@ -33,7 +33,7 @@ export default function Hero({ onCtaClick }: HeroProps) {
           className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
         >
           You Know God Has
-          <span className="block text-red-500">Something for You...</span>
+          <span className="block text-yellow-500">Something for You...</span>
         </motion.h1>
 
         <motion.h2
@@ -62,7 +62,7 @@ export default function Hero({ onCtaClick }: HeroProps) {
         >
           <button
             onClick={onCtaClick}
-            className="px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-bold rounded-lg text-lg transition-colors"
+            className="px-8 py-4 bg-yellow-500 hover:bg-yellow-600 text-black font-bold rounded-lg text-lg transition-colors"
           >
             GET CLARITY ON YOUR CALLING
           </button>
@@ -75,15 +75,15 @@ export default function Hero({ onCtaClick }: HeroProps) {
           className="flex flex-wrap justify-center gap-6 text-sm text-gray-400"
         >
           <div className="flex items-center gap-2">
-            <span className="text-sky-400 font-bold">6 Weeks</span>
+            <span className="text-yellow-500 font-bold">6 Weeks</span>
             <span>to clarity</span>
           </div>
           <div className="flex items-center gap-2">
-            <span className="text-sky-400 font-bold">24 Video Lessons</span>
+            <span className="text-yellow-500 font-bold">24 Video Lessons</span>
             <span>with workbooks</span>
           </div>
           <div className="flex items-center gap-2">
-            <span className="text-sky-400 font-bold">30-Day Guarantee</span>
+            <span className="text-yellow-500 font-bold">30-Day Guarantee</span>
             <span>risk-free</span>
           </div>
         </motion.div>
