@@ -6,28 +6,28 @@ import { useState } from "react";
 
 const faqs = [
   {
-    question: "What if I already paid annually for other tools?",
-    answer: "Many churches find the suite savings pay for the transition within 2-3 months. We also offer migration assistance to help you transition smoothly.",
+    question: "How is this different from just reading the book?",
+    answer: "The book gives you the framework. The course gives you the process. You'll get video teaching that goes deeper than the book, workbooks to apply what you're learning, a community of people on the same journey, and live coaching calls to get your specific questions answered.",
   },
   {
-    question: "Can I keep some tools and use the suite for others?",
-    answer: "Absolutely. The suite integrates with most major platforms. Use what you want, replace what you don't. We're flexible.",
+    question: "What if I've been a Christian for years and still don't know my calling?",
+    answer: "That's exactly who this course is for. Most people have been taught that calling is mysterious or only for 'special' Christians. This course demystifies the process and gives you practical tools to discover what God has already been showing you.",
   },
   {
-    question: "What about my data?",
-    answer: "All data is yours. Export anytime. We use bank-level encryption and never sell or share your information. Pastoral care notes are encrypted with HIPAA-level security.",
+    question: "How much time does each week require?",
+    answer: "Plan for 2-3 hours per week: 60-90 minutes of video content, 30-60 minutes for workbook exercises, and optional community engagement. It's designed for busy people who are serious about clarity.",
   },
   {
-    question: "What if I'm not tech-savvy?",
-    answer: "The suite is designed for pastors, not tech experts. If you can send an email, you can use this. Plus, we offer onboarding support for all plans.",
+    question: "What if I fall behind?",
+    answer: "You have lifetime access to all course materials. Go at your own pace. Many students take longer than 6 weeks, and that's perfectly fine. The content will be here when you're ready.",
   },
   {
-    question: "Can multiple staff use it?",
-    answer: "Yes. Church Plant and Multi-Site plans include multiple user accounts with role-based permissions. Individual plans can add users for a small fee.",
+    question: "Is this just for pastors or ministry leaders?",
+    answer: "Not at all. This is for any Christian who wants clarity on their calling—whether that's in business, education, healthcare, arts, or full-time ministry. Your calling is about who God made you to be, not just your job title.",
   },
   {
     question: "How does the 30-day guarantee work?",
-    answer: "Try the full suite for 30 days. If you don't reclaim at least 10 hours in your first month, we'll refund every penny. No questions. No hassle. Just a handshake and a prayer.",
+    answer: "Try the full course for 30 days. Complete the first two modules, do the work, and if you don't feel clearer about your calling, email us for a full refund. No questions. No hassle. We only want students who are getting value.",
   },
 ];
 
@@ -42,9 +42,9 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
       >
         <span className="text-base sm:text-lg font-semibold text-gray-900 pr-2">{question}</span>
         {isOpen ? (
-          <ChevronUp className="w-5 h-5 text-gray-500 flex-shrink-0" />
+          <ChevronUp className="w-5 h-5 text-yellow-500 flex-shrink-0" />
         ) : (
-          <ChevronDown className="w-5 h-5 text-gray-500 flex-shrink-0" />
+          <ChevronDown className="w-5 h-5 text-yellow-500 flex-shrink-0" />
         )}
       </button>
       {isOpen && (
@@ -74,7 +74,7 @@ export default function FAQ() {
         >
           <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             FREQUENTLY ASKED
-            <span className="text-red-600"> QUESTIONS</span>
+            <span className="text-yellow-500"> QUESTIONS</span>
           </h2>
         </motion.div>
 
